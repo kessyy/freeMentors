@@ -1,0 +1,107 @@
+  body {
+  margin: 0;
+  font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
+  line-height: 1.28;
+  }
+  #container {
+    background-color: #dee7ec;
+    height: 500px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
+    z-index: 1;
+  }
+  
+  .header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+  }
+  
+  .header-list li {
+    float: right;
+    padding: 33px 20px;
+  }
+  .image-container {
+    float: left;
+    width: 800px;
+    height: 500px;
+  }
+  #button {
+    position:relative;
+    width:45px;
+    height:18px;
+    background-color: #5b72a9;
+    border: 1px solid #999;
+    border-color:#8b9dc3 #2f477a #29447e #1a356e;
+    cursor:pointer;
+    font-size:11px;
+    font-weight:bold;
+    text-align:center;
+    color:#fff;
+  }
+  .signup-form {
+    /* position: absolute; */
+    width: 500px;
+    height: 480px;
+    float: right;
+    /* border: solid 1px #dee7ec; */
+    z-index: 2;
+  }
+  #name input, textarea {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    border: solid 1px #dee7ec; 
+    border-radius: 10px;
+  }
+  .contact-form {
+    /* position: absolute; */
+    padding-top: 80px;
+    z-index: 3;
+  }
+  
+  /* Add CSS for <input> and <textarea> tags */
+  /* input, textarea {
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+     border: solid 1px #dee7ec; 
+  } */
+  
+  /* Add CSS for contact-submit */
+  .contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+  }
+  
+  .footer {
+    background-color: #2f5167;
+    color: #fff;
+    height: 150px;
+    /* padding: 20px; */
+    bottom: 0px;
+  }
+  
+  .footer-logo {
+    float: left;
+    font-size: 32px;
+  }
+  
+  .footer-list {
+    float: right;
+  }
+  
+  .footer-list li {
+    padding-bottom: 10px;
+  }
+  
