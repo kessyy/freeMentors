@@ -64,12 +64,13 @@
   }
   .contact-form {
     /* position: absolute; */
-    padding-top: 80px;
+    /* padding-top: 50px; */
     z-index: 3;
+    
   }
   
   /* Add CSS for <input> and <textarea> tags */
-  /* input, textarea {
+  .contact-form input, textarea {
     width: 250px;
     height: 50px;
     margin-top: 10px;
