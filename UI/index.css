@@ -8,7 +8,9 @@ body {
   background-blend-mode: lighten;
   background-image: url("mentoring.jpg");
   }
-  
+  .container {
+    padding-bottom: 100px;
+  }
   li {
     list-style: none;
   }
