@@ -64,6 +64,39 @@ body {
     opacity: 1.0;
     filter: alpha(opacity=100); 
   }
+  .about {
+    font-size: 50px;
+  }
+  input[type=submit] {
+    background-color: #05316b;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #052155;
+  }
+  #profiles {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  #profiles td, #profiles th {
+    padding: 8px;
+  }
+  
+  #profiles tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.6);
+  }
+  
+  #profiles tr:hover {
+    background-color: rgba(51, 60, 141, 0.8);
+  }
   .footer {
     position: absolute;
     background-color:#05316b;
