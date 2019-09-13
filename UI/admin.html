@@ -27,27 +27,33 @@
                     <td>Jon Snow</td>
                     <td>jon@gmail.com</td>
                     <td>Male</td>
-                    <td><span id="demo">student</span></td>
-                    <td><button type="button" onclick="changeUser()">Change</button></td>
+                    <td><button id="btn1" >Student</button></td>
                   </tr>
                   <tr>
                     <td>Jane Austen</td>
                     <td>jane@gmail.com</td>
                     <td>Female</td>
-                    <td><span id="demo">student</span></td>
-                    <td><button type="button" onclick="changeUser()">Change</button></td>
+                    <td><button id="btn2" >Student</button></td>
                   </tr>
                   <tr>
                     <td>Jesse Smith</td>
                     <td>jesse@gmail.com</td>
                     <td>Male</td>
-                    <td> <span id="demo">student</span></td>
-                    <td><button type="button" onclick="changeUser()">Change</button></td>
+                    <td><button id="btn3" >Student</button></td>
                   </tr>
             </table>
             <script>
-            function changeUser(){document.getElementById("demo").innerHTML = 'Mentor';
-            }
+            // function changeUser(paramID){document.getElementById("demo").innerHTML = 'Mentor';
+            // }
+            window.onload = function () {
+    var all_buttons = document.querySelectorAll('button');
+    // console.log(all_buttons);
+    for (i = 0; i < all_buttons.length; i++) {
+        all_buttons[i].addEventListener('click',function () {
+            this.innerHTML = 'Mentor';
+        });
+    };
+};
             </script>
         </div>
         <div class="footer">
