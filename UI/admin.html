@@ -27,21 +27,28 @@
                     <td>Jon Snow</td>
                     <td>jon@gmail.com</td>
                     <td>Male</td>
-                    <td>Student</td><td><input type ="submit" value ="change"></td>
+                    <td><span id="demo">student</span></td>
+                    <td><button type="button" onclick="changeUser()">Change</button></td>
                   </tr>
                   <tr>
                     <td>Jane Austen</td>
                     <td>jane@gmail.com</td>
                     <td>Female</td>
-                    <td>Student</td><td><input type ="submit" value ="change"></td>
+                    <td><span id="demo">student</span></td>
+                    <td><button type="button" onclick="changeUser()">Change</button></td>
                   </tr>
                   <tr>
                     <td>Jesse Smith</td>
                     <td>jesse@gmail.com</td>
                     <td>Male</td>
-                    <td>Student</td><td><input type ="submit" value ="change"></td>
+                    <td> <span id="demo">student</span></td>
+                    <td><button type="button" onclick="changeUser()">Change</button></td>
                   </tr>
             </table>
+            <script>
+            function changeUser(){document.getElementById("demo").innerHTML = 'Mentor';
+            }
+            </script>
         </div>
         <div class="footer">
             <div class="footer-logo">Free Mentors</div>
