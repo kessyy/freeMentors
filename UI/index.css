@@ -118,4 +118,43 @@ body {
   .footer-list li {
     padding-bottom: 10px;
   }
-  
+  @media screen and (max-width: 1000px) {
+  .header{
+    width: 100%;
+  }
+  .footer {
+    position: absolute;
+  }
+  }
+  @media screen and (max-width: 800px) {
+  .header{
+    width: 100%;
+  }
+  .header-list li {
+    height: 20px;
+    padding: 8px 25px;
+  }
+  .signup-form {
+    width: 100%;
+  }
+  .footer {
+    display: none;
+  }
+  }
+  @media screen and (max-width: 400px) {
+  .header{
+    width: 100%;
+    height: 120px;
+  }
+  .header-list li{
+    height: 10px;
+    padding: 15px 15px;
+  }
+  .signup-form{
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    display: none;
+  }
+  }
