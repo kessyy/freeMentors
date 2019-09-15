@@ -2,6 +2,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <title>Free mentors</title>
         <link rel="stylesheet" href="/UI/css/admin.css">
@@ -17,43 +19,24 @@
             </ul>
             </div>
         </div>
-        <div class ="users">
+            <center><strong>REQUEST SESSIONS</strong></center>
             <table>
                     <th>Name</th>
-                    <th>Email</th> 
-                    <th>Gender</th>
-                    <th>Status</th>
+                    <th>status</th> 
                   </tr>
                   <tr>
                     <td>Jon Snow</td>
-                    <td>jon@gmail.com</td>
-                    <td>Male</td>
-                    <td><button id="btn1" >Student</button></td>
+                    <td><input type ="submit" value ="Accept"></td>
+                    <td><input type ="submit" value ="Reject"></td>
                   </tr>
                   <tr>
-                    <td>Jane Austen</td>
-                    <td>jane@gmail.com</td>
-                    <td>Female</td>
-                    <td><button id="btn2" >Student</button></td>
+                    <td>Jane Austen</td>>
+                    <td><input type ="submit" value ="Accept"></td>
+                    <td><input type ="submit" value ="Reject"></td>
                   </tr>
                   <tr>
-                    <td>Jesse Smith</td>
-                    <td>jesse@gmail.com</td>
-                    <td>Male</td>
-                    <td><button id="btn3" >Student</button></td>
-                  </tr>
+
             </table>
-            <script>
-            window.onload = function () {
-            var all_buttons = document.querySelectorAll('button');
-            for (i = 0; i < all_buttons.length; i++) {
-            all_buttons[i].addEventListener('click',function () {
-            this.innerHTML = 'Mentor';
-        });
-    };
-};
-            </script>
-        </div>
         <div class="footer">
             <div class="footer-logo">Free Mentors</div>
             <div class="footer-list">
