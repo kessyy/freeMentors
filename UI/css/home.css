@@ -6,7 +6,7 @@ body {
   background-size: cover;
   background-origin: content-box;
   background-blend-mode: lighten;
-  background-image: url("mentoring.jpg");
+  background-image: url("/UI/images/mentoring.jpg");
   }
     
   li {
@@ -183,6 +183,9 @@ body {
   }
   #profiles {
     width: 100%
+  }
+  table {
+    width: 100%;
   }
   .footer {
     display: none;
