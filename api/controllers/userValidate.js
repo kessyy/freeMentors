@@ -14,11 +14,10 @@ return Joi.validate(userSchema);
 
 export default () => {
     const validationOptions = {
-        abortEarly: false, // Abort after the last validation error
-        allowUnknown: true, // allow unknown keys that will be ignored
+        abortEarly: false, 
+        allowUnknown: true, 
     }
 
-    // return the validation middleware
     return (req, res, next) => {
         return joi.validate(req.body, userSchema, validationOptions, (err, data) => {
             if(err) {
