@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import signinValidate from '../api/controllers/signinValidate'
 import userValidate from '../api/controllers/userValidate'
 
+
 const app = express();
  //Parse incoming requests data
  app.use(bodyParser.json());

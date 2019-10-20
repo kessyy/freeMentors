@@ -30,9 +30,9 @@ class user {
     }
 }
  class sessions {
-     constructor(sesseionId, mentorId, menteeId, score, menteeFullName, remark){
+     constructor(sessionId, mentorId, menteeId, score, menteeFullName, remark){
          this.dbs = []; {
-             this.sesseionId = parseInt();
+             this.sessionId = parseInt();
              this.userId = parseInt();
              this.mentorId = mentorId;
              this.score = parseInt();
@@ -42,7 +42,7 @@ class user {
      }
  }
 
-module.export = {
+export default {
     user, 
     mentor,
     sessions

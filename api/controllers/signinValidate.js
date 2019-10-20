@@ -1,13 +1,14 @@
-import joi from 'joi';
+import Joi from '@hapi/joi';
 
-const signinSchema = 
-     joi.object().keys({
-      email: joi.string().email({minDomainAtoms: 2 }).lowercase().required().label("Valid Email Address is required"),
-      password: joi.string().min(8).required(),
+const validateLogin = (info) => {
+    const schema =
+     Joi.object().keys({
+      email: Joi.string().email({minDomainAtoms: 2 }).lowercase().required().label("Valid Email Address is required"),
+      password: Joi.string().min(8).required(),
     });
-    return Joi.validate(signinSchema);
+    return Joi.validate(info, schema);
   ;
-
+}
 export default () => {
     const validationOptions = {
         abortEarly: false, // Abort after the last validation error
@@ -17,7 +18,7 @@ export default () => {
     // return the validation middleware
     return (req, res, next) => {
 
-        return joi.validate(req.body, signinSchema, validationOptions, (err, data) => {
+        return joi.validate(req.body, validateLogin, validationOptions, (err, data) => {
             if(err) {
 
                 const errors = [];
